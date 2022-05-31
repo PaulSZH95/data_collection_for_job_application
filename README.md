@@ -24,18 +24,24 @@ in cli
 cd ../app
 
 for windows:
+
 set FLASK_APP=run.py
 
 set FLASK_ENV=development (so you can debug)
 
-or
+//
 
 set FLASK_ENV=production (run as is)
+
+
+flask run
+
+on browser enter the ip 127.0.0.1:5000, to access the webapp
+
+p.s.
 
 for linux:
 use export instead of set.
 
 do also remember to downlowd a linux version of chromedriver, chromedriver attached is for windows only
 
-
-flask run
