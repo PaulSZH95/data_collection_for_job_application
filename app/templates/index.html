@@ -1,0 +1,115 @@
+{% extends "parent/mainframe.html" %} {% block title %} Home {% endblock %} {%
+block main %}
+<div class="upper">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Upload Resume</h1>
+        <hr />
+        <form action="/" method="POST" enctype="multipart/form-data">
+          <label class="form-label" for="customFile"
+            >Upload your resume, remember to remove all identifier before
+            submitting</label
+          >
+          <input
+            type="file"
+            class="form-control"
+            name="customFile"
+            id="customFile"
+          />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="tom">
+    <h1>
+      Educational exploration for the democratisation of Job-Recommendations
+    </h1>
+    <article>
+      Welcome, automated job-recommendations (like many many other programs)
+      have always been an exclusive tool of private companies. However, with the
+      recent advent of FOSS campaign, everyday consumers are now rising to be
+      creators of programs too. This is largely due to a plethora of educational
+      materials such as the freecodecamp and also software like python. This app
+      attempts to use out-of-the-box and easily accessible python libraries to
+      1) automate resume processing and 2) searching of relevant jobs via major
+      job-sites. In doing so, we will be able to explore how much easier it is
+      for consumers to create sophisticated programs which were once exclusive.
+    </article>
+    <article class="lower">
+      This app uses two capabilities of python to conduct automation, namely
+      Machine Learning and Webscraping. <br />
+      <ul>
+        <li>
+          pyresparser, a Machine Learning library provided by
+          <a href="https://omkarpathak.in/pyresparser/">Mr Omkar Pathak,</a> for
+          resume processing.
+        </li>
+        <li>
+          chromedriver, selenium, request and bs4 libraries for webscraping of
+          jobsites.
+        </li>
+      </ul>
+      <span>This app is strictly for educational purposes.</span> The websites
+      scraped are <a href="https://linkedin.com">linkedin</a>,
+      <a href="https://indeed.com">indeed</a>,
+      <a href="https://mycareersfuture.gov.sg">mycareersfuture.gov.sg</a>.<br />
+      You must yourself visit the mentioned jobsites and read and agree to their
+      governing terms,rules and laws (non-exhaustive) before proceeding. Only
+      proceed after you are agreeable to their governing terms,rules and laws
+      (non-exhaustive).<br />
+      Usage of this app and/or its code, either by parts or in entirety will be
+      taken as your consent that you have 1) read the governing rules,terms and
+      laws (non-exhaustive) of the jobsites mentioned and 2) agree to them in
+      all of their entirety.<br />
+      <br />
+      <span
+        >You are solely responsible for your own usage of this app and it's
+        code.</span
+      >
+      Site/code-owner(s) and developer(s)<span>
+        will not be responsible and/or liable</span
+      >
+      for your actions and or loss. You have been warned.<br /><br />
+      The codes can be found at
+      <a
+        href="https://github.com/PaulSZH95/data_collection_for_job_application"
+      >
+        this github repo
+      </a>
+
+      <br />
+    </article>
+  </div>
+</div>
+
+<style>
+  div.upper {
+    padding: 20px;
+    color: black;
+  }
+
+  .tom {
+    padding: 16px;
+    color: black;
+  }
+
+  article {
+    font-size: 1.5em;
+    color: rebeccapurple;
+    margin-top: 10px;
+  }
+  
+  .lower {
+    padding-right: 10px;
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 20px;
+  }
+  span {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+{% endblock %}

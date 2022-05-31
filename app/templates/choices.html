@@ -1,0 +1,63 @@
+{% extends "parent/mainframe.html" %} {% block title %} Choices{% endblock %} {%
+block moreButton %}
+<li class="nav-item active">
+  <a class="nav-link" href="/choices"
+    >Choices<span class="sr-only">(Return you to choices-page)</span></a
+  >
+</li>
+{% endblock %} {% block main %}
+<div class="out-of-idea">
+  <article>
+    <h2>These are the skills your resume has shown</h2>
+    <p>Select whichever skills you would like to use for job search</p>
+  </article>
+</div>
+<div>
+  <form method="POST" action="" class="upper">
+    {% for i in items %}
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value="{{i}}"
+        id="flexCheckDefault"
+        name="haro"
+      />
+      <label class="form-check-label" for="flexCheckDefault">{{i}}</label>
+    </div>
+    {% endfor %}
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<style>
+  form.upper {
+    padding: 20px;
+    color: black;
+  }
+
+  div.form-check {
+    display: inline-block;
+    color: black;
+  }
+
+  div.out-of-idea {
+    color: black;
+  }
+
+  article {
+    padding: 16px;
+    font-size: 1.5em;
+    color: rebeccapurple;
+    margin-top: 10px;
+  }
+
+  h2 {
+    color: black;
+  }
+
+  button {
+    color: red;
+  }
+</style>
+{% endblock %}
