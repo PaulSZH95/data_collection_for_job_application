@@ -33,12 +33,6 @@ set FLASK_ENV=development (so you can debug)
 
 set FLASK_ENV=production (run as is)
 
-# updates:
-
-available website: mycareersfuture(sg)
-
-upcoming updates: linkedin and indeed
-
 flask run
 
 on browser enter the ip 127.0.0.1:5000, to access the webapp
@@ -49,4 +43,12 @@ for linux:
 use export instead of set.
 
 do also remember to downlowd a linux version of chromedriver, chromedriver attached is for windows only
+
+
+# updates:
+
+available website: mycareersfuture(sg)
+
+upcoming updates: linkedin and indeed
+
 
