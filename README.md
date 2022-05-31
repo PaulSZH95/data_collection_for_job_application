@@ -6,7 +6,8 @@ I have seek to extract data from dynamic websites. More to come.
 
 p.s. excel is used now due to habit, will move to mysql or whatever sql (the syntax are mostly the same) in the future
 
-create virtual environment in anaconda:
+
+# create virtual environment in anaconda:
 
 conda create -n envname python=3.7
 conda activate envname
