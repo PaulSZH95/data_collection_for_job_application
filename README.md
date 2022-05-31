@@ -33,6 +33,11 @@ set FLASK_ENV=development (so you can debug)
 
 set FLASK_ENV=production (run as is)
 
+# updates:
+
+available website: mycareersfuture(sg)
+
+upcoming updates: linkedin and indeed
 
 flask run
 
