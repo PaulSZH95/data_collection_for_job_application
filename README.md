@@ -10,6 +10,9 @@ p.s. excel is used now due to habit, will move to mysql or whatever sql (the syn
 # create virtual environment in anaconda:
 
 conda create -n envname python=3.7
+
 conda activate envname
+
 cd ../path_of_requirement.txt/
+
 pip install - r requirements.txt
