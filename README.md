@@ -6,6 +6,11 @@ I have seek to extract data from dynamic websites. More to come.
 
 p.s. excel is used now due to habit, will move to mysql or whatever sql (the syntax are mostly the same) in the future
 
+# Demo of gui usage:
+
+https://youtu.be/oCQWBGQyD7Y
+
+take note that it's normal for it to be loading on choices page
 
 # create virtual environment in anaconda:
 
