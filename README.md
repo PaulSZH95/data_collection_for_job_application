@@ -16,3 +16,26 @@ conda activate envname
 cd ../path_of_requirement.txt/
 
 pip install - r requirements.txt
+
+# usage:
+
+in cli
+
+cd ../app
+
+for windows:
+set FLASK_APP=run.py
+
+set FLASK_ENV=development (so you can debug)
+
+or
+
+set FLASK_ENV=production (run as is)
+
+for linux:
+use export instead of set.
+
+do also remember to downlowd a linux version of chromedriver, chromedriver attached is for windows only
+
+
+flask run
