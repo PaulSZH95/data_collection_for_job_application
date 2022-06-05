@@ -52,8 +52,8 @@ do also remember to downlowd a linux version of chromedriver, chromedriver attac
 
 # updates:
 
-available website: mycareersfuture(sg)
+available website: mycareersfuture(sg), linkedin
 
-upcoming updates: linkedin and indeed
+upcoming updates: indeed
 
 
