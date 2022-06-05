@@ -5,7 +5,8 @@ import sys
 import shutil
 sys.path.append("../webscrape/data_hunter")
 # from data_hunter import customFunc
-from data_hunter.customFunc import *
+from data_hunter.customFuncMCF import *
+from data_hunter.customFunclink import *
 from flask import render_template, flash, request, redirect, url_for, session, send_file
 import zipfile
 import pathlib
@@ -14,6 +15,7 @@ from werkzeug.utils import secure_filename
 
 
 ### globals ####
+
 
 UPLOAD_FOLDER ="./resources"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -86,6 +88,8 @@ def print_shit():
         super_var_unique = request.form.getlist('haro')
         for i in super_var_unique:
             browser_sim(url,i,driver_loc,'./resources/')
+            searches = i
+            search_linkedin(i,'Singapore',driver_loc,'./resources/')
 
     return redirect(url_for('results'))
 
