@@ -23,6 +23,8 @@ with wd.Chrome(executable_path = driver_loc) as driver:
 
 ###############functions######################################################
 
+start_time = time.time()
+
 def even_num_gen(a,b):
     return list(range(a,b,2))
 
@@ -179,3 +181,5 @@ def browser_sim(url,searches,driver_loc,dir):
 
     #print(df1)
     df1.to_csv(f'{dir}url_desc_{datetime.date.today()}{searches}.csv',index=False)
+
+    print(time.time() - start_time)
