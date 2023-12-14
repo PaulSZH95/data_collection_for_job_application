@@ -18,9 +18,11 @@ conda create -n envname python=3.7
 
 conda activate envname
 
-cd ../path_of_requirement.txt/
+cd app/path_of_requirement.txt/
 
 pip install - r requirements.txt
+
+python -m nltk.downloader stopwords
 
 # usage:
 
