@@ -30,7 +30,6 @@ outcome==1.1.0
 pandas==1.3.5
 pathlib==1.0.1
 pdfminer.six==20220524
-pip==21.2.4
 plac==1.1.3
 preshed==3.0.6
 pycparser==2.21
